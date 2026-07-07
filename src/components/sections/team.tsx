@@ -18,7 +18,7 @@ const members = [
 		role: "Founder & CEO",
 		bio: "Yahya built Pipeline Grid after seeing how many great B2B founders were losing deals not because of their product, but because no one knew they existed. He leads strategy, client relationships and the overall system.",
 		image: "/yahya.jpeg",
-		linkedin: "#",
+		linkedin: "https://www.linkedin.com/in/yahya-abdi-041a971ab/",
 		objectPosition: "center top",
 	},
 	{
@@ -26,7 +26,7 @@ const members = [
 		role: "Head of Operations",
 		bio: "Ahmed oversees the day-to-day execution from campaign builds and setter management to performance reporting. He ensures every client's pipeline runs smoothly and on time.",
 		image: "/ahmed.png",
-		linkedin: "#",
+		linkedin: "https://www.linkedin.com/in/ahmed-mohamed-415443417/",
 		objectPosition: "center center",
 	},
 ];
