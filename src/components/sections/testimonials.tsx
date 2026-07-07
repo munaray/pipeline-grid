@@ -9,8 +9,8 @@ const testimonials = [
 			"PipelineGrid has been phenomenal to work with. They consistently elevated my founder-led outreach whilst I was doing it myself, and now that we're scaling with a new offer, I'm thrilled to have them fully managing and building our pipeline. Highly recommend their team for anyone serious about LinkedIn lead gen!",
 		name: "Alex Johnson",
 		role: "Founder & CEO",
-		company: "ScaleOps",
-		companyUrl: "https://scaleops.com",
+		company: "Process Zero",
+		companyUrl: "https://processzero.co.uk/",
 		avatar: null,
 	},
 ];
