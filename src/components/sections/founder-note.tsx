@@ -5,6 +5,8 @@ import Image from "next/image";
 
 export default function FounderNote() {
 	const ref = useRef<HTMLElement>(null);
+	const imgRef = useRef<HTMLDivElement>(null);
+	const textRef = useRef<HTMLDivElement>(null);
 	const [visible, setVisible] = useState(false);
 
 	useEffect(() => {
@@ -26,19 +28,16 @@ export default function FounderNote() {
 	return (
 		<section
 			ref={ref}
-			className={`relative overflow-hidden bg-background px-6 py-16 sm:px-8 sm:py-20
-				lg:transition-none
-				${
-					visible
-						? "translate-y-0 opacity-100 lg:animate-[slide-up-in_0.7s_ease-out_forwards]"
-						: "translate-y-10 opacity-0 lg:opacity-0"
-				}
-				transition-all duration-700 ease-out`}>
+			className="relative overflow-hidden bg-background px-6 py-16 sm:px-8 sm:py-20">
 			<div className="mx-auto max-w-7xl">
 				<div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
-					{/* Image */}
-					<div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-2xl border border-white/[0.08] ring-1 ring-white/[0.04] lg:max-w-none">
-						<div className="aspect-[4/5] w-full">
+					{/* Image — slides in from left */}
+					<div
+						ref={imgRef}
+						className={`relative mx-auto w-full max-w-sm overflow-hidden rounded-2xl border border-white/[0.08] ring-1 ring-white/[0.04] lg:max-w-none
+							transition-all duration-700 ease-out
+							${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"}`}>
+						<div className="aspect-[3/2] w-full">
 							<Image
 								src="/founder-desk.jpeg"
 								alt="Yahya Abdi, Founder & CEO of Pipeline Grid"
@@ -50,8 +49,12 @@ export default function FounderNote() {
 						</div>
 					</div>
 
-					{/* Quote */}
-					<div className="flex flex-col gap-6">
+					{/* Quote — slides in from right, slight delay */}
+					<div
+						ref={textRef}
+						className={`flex flex-col gap-6
+							transition-all duration-700 ease-out delay-150
+							${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"}`}>
 						<div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/25 bg-black/35 px-5 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.34em]">
 							<span className="h-2 w-2 rounded-full bg-linear-to-r from-primary-foreground via-(--color-brand-light) to-(--color-brand) shadow-[0_0_18px_rgba(139,92,246,0.9)]" />
 							<span className="bg-linear-to-r from-primary-foreground via-(--color-brand-light) to-(--color-brand) bg-clip-text text-transparent">
@@ -60,7 +63,9 @@ export default function FounderNote() {
 						</div>
 
 						<blockquote className="flex flex-col gap-5">
-							<span className="text-5xl leading-none text-primary/40 select-none">&ldquo;</span>
+							<span className="select-none text-5xl leading-none text-primary/40">
+								&ldquo;
+							</span>
 							<p
 								className="text-[clamp(1.1rem,2.2vw,1.4rem)] font-medium leading-relaxed text-white/90"
 								style={{ fontFamily: "var(--font-sora)" }}>
