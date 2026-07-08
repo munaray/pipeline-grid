@@ -51,7 +51,9 @@ export default function Header() {
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="#book-a-call"
+            href="https://calendly.com/yahya-myimperiumsystems/30min?back=1&month=2026-07"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center justify-center h-9 px-5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors duration-200"
           >
             Book a Call
@@ -87,7 +89,9 @@ export default function Header() {
             ))}
           </nav>
           <a
-            href="#book-a-call"
+            href="https://calendly.com/yahya-myimperiumsystems/30min?back=1&month=2026-07"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center h-9 px-5 rounded-full bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors"
             onClick={() => setMenuOpen(false)}
           >
