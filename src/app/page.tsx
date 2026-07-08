@@ -14,7 +14,7 @@ export default function Home() {
 	return (
 		<main>
 			<Hero />
-			<FounderNote />
+			{/* <FounderNote /> */}
 			<Problem />
 			<HowItWorks />
 			<WhatsIncluded />

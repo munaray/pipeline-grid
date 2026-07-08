@@ -93,7 +93,9 @@ export default function WhatsIncluded() {
 
 				<div className="mt-10 flex justify-center sm:justify-start">
 					<a
-						href="#book-a-call"
+						href="https://calendly.com/yahya-myimperiumsystems/30min?back=1&month=2026-07"
+						target="_blank"
+						rel="noopener noreferrer"
 						className="inline-flex h-11 w-full items-center justify-center rounded-md bg-linear-to-r from-primary via-(--color-brand-light) to-(--color-brand) px-7 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(139,92,246,0.28),inset_0_1px_0_rgba(255,255,255,0.22)] [text-shadow:0_1px_2px_rgba(0,0,0,0.28)] transition-opacity hover:opacity-90 sm:h-12 sm:w-auto sm:min-w-60 sm:rounded-full">
 						Book Your Free Strategy Call →
 					</a>
