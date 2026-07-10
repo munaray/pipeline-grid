@@ -68,6 +68,13 @@ export default function CTA() {
 						className="inline-flex h-11 w-full items-center justify-center rounded-md bg-linear-to-r from-primary via-(--color-brand-light) to-(--color-brand) px-8 text-sm font-semibold text-white shadow-[0_14px_34px_rgba(139,92,246,0.35),inset_0_1px_0_rgba(255,255,255,0.22)] [text-shadow:0_1px_2px_rgba(0,0,0,0.28)] transition-opacity hover:opacity-90 sm:h-12 sm:w-auto sm:min-w-64 sm:rounded-full">
 						Book Your Free Strategy Call →
 					</a>
+					<a
+						href="https://www.linkedin.com/newsletters/pipeline-insider-7475236472061763585"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex h-11 w-full items-center justify-center rounded-md border border-white/12 bg-white/[0.04] px-6 text-sm font-semibold text-white/80 transition-colors hover:border-primary/30 hover:text-white sm:h-12 sm:w-auto sm:rounded-full">
+						Read the Newsletter
+					</a>
 				</div>
 			</div>
 		</section>

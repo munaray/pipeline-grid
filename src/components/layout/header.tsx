@@ -51,6 +51,14 @@ export default function Header() {
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
+            href="https://www.linkedin.com/newsletters/pipeline-insider-7475236472061763585"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center justify-center h-9 px-5 rounded-full border border-primary/30 bg-white/[0.04] text-sm font-medium text-white/80 hover:border-primary/50 hover:text-white transition-colors duration-200"
+          >
+            Newsletter
+          </a>
+          <a
             href="https://calendly.com/yahya-myimperiumsystems/30min?back=1&month=2026-07"
             target="_blank"
             rel="noopener noreferrer"
@@ -88,6 +96,15 @@ export default function Header() {
               </a>
             ))}
           </nav>
+          <a
+            href="https://www.linkedin.com/newsletters/pipeline-insider-7475236472061763585"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center h-9 px-5 rounded-full border border-primary/30 bg-white/[0.04] text-sm font-medium text-white/80 hover:border-primary/50 hover:text-white transition-colors"
+            onClick={() => setMenuOpen(false)}
+          >
+            Newsletter
+          </a>
           <a
             href="https://calendly.com/yahya-myimperiumsystems/30min?back=1&month=2026-07"
             target="_blank"
