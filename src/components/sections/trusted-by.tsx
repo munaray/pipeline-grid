@@ -25,15 +25,17 @@ export default function TrustedBy() {
 								href={url}
 								target="_blank"
 								rel="noopener noreferrer"
-								aria-label={name}
-								className="opacity-50 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
+								className="flex items-center gap-2.5 transition-opacity duration-300 hover:opacity-70">
 								<Image
 									src={logo}
 									alt={name}
 									width={width}
 									height={height}
-									className="h-8 w-auto object-contain sm:h-10"
+									className="h-7 w-auto object-contain sm:h-8"
 								/>
+								<span className="text-sm font-semibold text-white/80">
+									{name}
+								</span>
 							</a>
 						))}
 					</div>
