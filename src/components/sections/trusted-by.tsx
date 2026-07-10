@@ -31,9 +31,9 @@ export default function TrustedBy() {
 									alt={name}
 									width={width}
 									height={height}
-									className="h-7 w-auto object-contain sm:h-8"
+									className="h-4 w-auto object-contain sm:h-5"
 								/>
-								<span className="text-sm font-semibold text-white/80">
+								<span className="text-base font-semibold text-white/80">
 									{name}
 								</span>
 							</a>
