@@ -1,4 +1,5 @@
 import Hero from "@/components/sections/hero";
+import TrustedBy from "@/components/sections/trusted-by";
 import FounderNote from "@/components/sections/founder-note";
 import Problem from "@/components/sections/problem";
 import HowItWorks from "@/components/sections/how-it-works";
@@ -14,6 +15,7 @@ export default function Home() {
 	return (
 		<main>
 			<Hero />
+			<TrustedBy />
 			{/* <FounderNote /> */}
 			<Problem />
 			<HowItWorks />
